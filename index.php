@@ -1,33 +1,40 @@
 
     <?php
 
-$n1 = true;
-$n2 = false;
-$n3 = false;
+$n1 = 1900;
 
-if($n1){
-    if($n2){
-        if($n3){
-            echo"Hello";
-        }else{
-            echo"on 1"; 
-        }
-    }else{
-        echo"on 2";
-    }
+
+if($n1 % 4 == 0 && $n1 % 100 == 0 && $n1 % 400 == 0){
+    echo "{$n1} is a leap year";
+}else if($n1 % 4 == 0 && $n1 % 100 == 0){
+    echo "{$n1} is not a leap year";;
+}else if($n1 % 4 == 0){
+    echo "{$n1} is a leap year";
 }else{
-    echo"on 3";
+    echo "{$n1} is not a leap year";
 }
 
 echo "\n";
 
-if($n1 && $n2 && $n3){
-    echo "hello";
-}else if($n1 && $n2){
-    echo"on 1";
-}else if($n1){
-    echo "no 2";
-}else{
-    echo"on 3";
+if(true && true){
+    echo "wow1";
+}
+echo "\n";
+
+if(true && false){
+    echo "wow2";
+}
+echo "\n";
+
+if(false && false){
+    echo "wow3";
+}
+echo "\n";
+
+if(false || true){
+    echo "wow4";
 }
 ?>
+
+
+
