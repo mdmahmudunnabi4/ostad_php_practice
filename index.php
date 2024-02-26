@@ -1,20 +1,33 @@
 
     <?php
-$fname = "Isaac";
-$lname = "Newton";
-printf("his %s Name is %s %s \n","Full", $fname, $lname);
-;
 
-echo "my
-name
-is 
-{$fname} {$lname}\n
-, How are you"."\n";
+$n1 = true;
+$n2 = false;
+$n3 = false;
 
-echo "the name is ".$fname." and anather name is ".$lname."\n";
-echo "the name is {$fname} and anather name is {$lname}\n";
-printf ("the name is %s and anather name is %s",$fname, $lname);
+if($n1){
+    if($n2){
+        if($n3){
+            echo"Hello";
+        }else{
+            echo"on 1"; 
+        }
+    }else{
+        echo"on 2";
+    }
+}else{
+    echo"on 3";
+}
 
+echo "\n";
 
-
+if($n1 && $n2 && $n3){
+    echo "hello";
+}else if($n1 && $n2){
+    echo"on 1";
+}else if($n1){
+    echo "no 2";
+}else{
+    echo"on 3";
+}
 ?>
